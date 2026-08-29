@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: #f2f2f2;
+	color: #000;
+        }
+        .box {
+            width: 100px;
+            aspect-ratio: 1 / 1;
+            background-color: coral;
+            position: relative;
+            animation: move-box 4s infinite alternate ease-in-out,
+                        change-color 4s infinite alternate ease-in-out,
+                        box-rotate 4s infinite alternate ease-in-out,
+                        scale-box 4s infinite alternate ease-in-out,
+                        morph-box 4s infinite alternate ease-in-out;
+        }
+        @keyframes move-box {
+            0% {
+                left: 0%;
+                top: -40%;
+            }
+            25% {
+                left: 50%;
+                top: -10%;
+            }
+            50% {
+                left: 0%;
+                top: 0%;
+            }
+            100% {
+                left: 30%;
+                top: 30%;
+            }
+        }
+		@keyframes change-color {
+			0% {background:rgb(187, 75, 255);}
+			50% {background:rgb(255, 93, 215);}
+			75% {background:rgb(255, 245, 100);}
+			100% {background:rgb(119, 255, 82);}
+		}
+		
+		@keyframes box-rotate {
+			0% {transform: rotate(0deg) scale(0.5);}
+			50% {transform: rotate(360deg) scale(4.5);}
+			75% {transform: rotate(720deg) scale(1);}
+			100% {transform: rotate(980deg) scale(3);}
+		}
+
+        @keyframes morph-box {
+			0% {border-radius: 100vh;}
+			50% {border-radius: 10vh 20vh 50vh 5vh;}
+			75% {border-radius: 10vh;}
+			100% {border-radius: 20vh 5vh 10vh 30vh;}
+		}
+
+    </style>
+</head>
+<body>  
+<div class="box"></div>
+</body>
+</html>

@@ -28,3 +28,20 @@ for i in graph:
     print(i)
 print("\npossible paths begin and ends at source:",s,":")
 print("minimum cost:",tsp(graph,s))
+
+# OUTPUT
+# traveling salesman
+# given graph
+# [0, 2, 5, 7]
+# [2, 0, 8, 3]
+# [5, 8, 0, 1]
+# [7, 3, 1, 0]
+
+# possible paths begin and ends at source: 0 :
+# (1, 2, 3):18
+# (1, 3, 2):11
+# (2, 1, 3):23
+# (2, 3, 1):11
+# (3, 1, 2):23
+# (3, 2, 1):18
+# minimum cost: 11

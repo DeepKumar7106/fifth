@@ -61,9 +61,7 @@ print("\nTotal Cost of MST: ", mst_cost)
 # *********** Kruskal's Algorithm ***********
 # Edges in the Minimum Spanning Tree:
 # 2 -- 3 = 1
-# 0 -- 2 = 2
-# 2 -- 4 = 3
-# 0 -- 1 = 4
+# 0 -- 2 = 2.
 # 3 -- 5 = 7
 #
 # Total Cost of MST:  17

@@ -1,3 +1,5 @@
+# Write a program to perform Travelling Salesman Problem 
+
 from sys import maxsize
 from itertools import permutations as pe
 v=4
@@ -21,6 +23,10 @@ def tsp(graph,s):
     return min_path
 
 graph=[[0,2,5,7],[2,0,8,3],[5,8,0,1],[7,3,1,0]]
+# graph=[[0, 10, 15, 20],
+#     [10, 0, 35, 25],
+#     [15, 35, 0, 30],
+#     [20, 25, 30, 0]]
 s=0
 print("traveling salesman")
 print("given graph")

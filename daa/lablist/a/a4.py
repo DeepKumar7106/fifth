@@ -1,24 +1,11 @@
-#BFS
-##graph = {
-##    '5': ['3', '7'],
-##    '3': ['2', '4'],
-##    '7': ['8'],
-##    '2': [],
-##    '4': ['8'],
-##    '8': []
-##}
-
-graph =  {
-    'a':['d','c','e'],
-    'b':['f','e'],
-    'c':['a','d','f'],
-    'd':['c','a'],
-    'e':['a','b','f'],
-    'f':['b','c','e'],
-    'g':['h','j'],
-    'h':['g','i'],
-    'i':['j','h'],
-    'j':['g','i'],
+# Write program to implement the BFS algorithm for a graph. 
+graph = {
+   '5': ['3', '7'],
+   '3': ['2', '4'],
+   '7': ['8'],
+   '2': [],
+   '4': ['8'],
+   '8': []
 }
 
 visited = []
@@ -45,4 +32,8 @@ for node in graph:
     if node not in visited:
         bfs(node)
 
-                
+# OUTPUT            
+# The graph is  {'a': ['d', 'c', 'e'], 'b': ['f', 'e'], 'c': ['a', 'd', 'f'], 'd': ['c', 'a'], 'e': ['a', 'b', 'f'], 'f': ['b', 'c', 'e'], 'g': ['h', 'j'], 'h': ['g', 'i'], 'i': ['j', 'h'], 'j': ['g', 'i']}
+# Enter a starting node: a
+# BFS Travesal of given graph: 
+# a d c e f b g h j i

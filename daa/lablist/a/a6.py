@@ -1,3 +1,6 @@
+# Write a program to implement Strassen's Matrix Multiplication 
+# of 2*2 Matrixes. 
+
 def strassen_matrix_multiply(A,B):
     a, b, c, d = A[0][0], A[0][1], A[1][0], A[1][1]
     e, f, g, h = B[0][0], B[0][1], B[1][0], B[1][1]
@@ -18,3 +21,16 @@ B = [[int(input(f"Enter B[{i}][{j}]: ")) for j in range(2)] for i in range(2)]
 result = strassen_matrix_multiply(A,B)
 for row in result:
     print(row)
+
+
+# OUTPUT
+# Enter A[0][0]: 1
+# Enter A[0][1]: 2
+# Enter A[1][0]: 3
+# Enter A[1][1]: 4
+# Enter B[0][0]: 1
+# Enter B[0][1]: 2
+# Enter B[1][0]: 3
+# Enter B[1][1]: 4
+# [7, 10]
+# [15, 22]

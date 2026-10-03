@@ -1,3 +1,6 @@
+# Write a program that implements Prim’s algorithm to generate 
+# minimum cost spanning Tree. 
+
 INF = 9999999
 sum = 0
 N = 5
@@ -35,6 +38,7 @@ while V < N - 1:
     V += 1
 print("\nTotal cost = ", sum)
 
+# OUTPUT
 # Weight Matrix of a Given graph
 # [0, 19, 5, 0, 0]
 # [19, 0, 5, 9, 2]

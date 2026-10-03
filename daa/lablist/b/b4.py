@@ -1,3 +1,8 @@
+# Write program to generate the Huffman code for the given 
+# character and probabilities. 
+# Character     |A   |B   |C   |D   |E   |
+# Probability   |0.1 |0.1 |0.2 |0.2 |0.4 |
+
 characters = ['A','B','C','D','E']
 probabilities = [0.35,0.1,0.2,0.2,0.15]
 
@@ -34,6 +39,7 @@ print("Huffman codes: ")
 for character in characters:
     print(character, ":", codes[character])
 
+# OUTPUT
 # Huffman codes:
 # A : 11
 # B : 100

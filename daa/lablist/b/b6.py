@@ -1,5 +1,5 @@
-from numpy.ma.core import append
-
+# Write a program that implements Kruskal’s algorithm to 
+# generate minimum cost spanning tree. 
 
 def find(parent, node):
     if parent[node] != node:
@@ -40,8 +40,8 @@ def Kruskal(n, edges):
 n = 6
 edges = [
     ( 4, 0, 1),
-    ( 2, 0, 2),
-    ( 4, 1, 2),
+    ( 4, 0, 2),
+    ( 2, 1, 2),
     ( 5, 1, 3),
     ( 1, 2, 3),
     ( 3, 2, 4),
@@ -61,7 +61,9 @@ print("\nTotal Cost of MST: ", mst_cost)
 # *********** Kruskal's Algorithm ***********
 # Edges in the Minimum Spanning Tree:
 # 2 -- 3 = 1
-# 0 -- 2 = 2.
+# 1 -- 2 = 2
+# 2 -- 4 = 3
+# 0 -- 1 = 4
 # 3 -- 5 = 7
 #
 # Total Cost of MST:  17

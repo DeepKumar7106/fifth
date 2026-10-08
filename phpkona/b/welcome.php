@@ -7,19 +7,12 @@
 <?php 
 	session_start();
 	if(!isset($_SESSION['username'])) {
-		header("Location: a3.php");
-		exit();
-	}
-	if(isset($_GET['logout'])) {
-		session_destroy();
-		header("Location: a3.php");
+		header("Location: b5.php");
 		exit();
 	}
 ?>
 
 <body>
 <h2>Welcome <?php echo $_SESSION['username'];?></h2>
-<p>This is a secure area. You are logged in! :)</p>
-<a href="welcome.php?logout=true">Logout</a>
 </body>
 </html>

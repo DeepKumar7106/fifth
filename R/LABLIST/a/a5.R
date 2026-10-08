@@ -1,18 +1,6 @@
 #. Write an R program to create a Data Frame with following details and do the following operations. 
 #ItemCode 1001 Electronics 1002 700 Desktop Supplies 300 1003 1004 Office Supplies USB 350 1005 400 CD Drive 800 
 
-#a) Subset the Data frame and display the details of only 
-#those items whose price is greater than or equal to 350. 
-#b) Subset the Data frame and display only the items where 
-#the category is either “Office Supplies” or “Desktop 
-#Supplies” 
-#c) Subset the Data frame and display the items where the 
-#Itemprice between 300 and 700 
-#d) Compute the sum of all ItemPrice 
-#e) Create another Data Frame called “item-details” with 
-#three different fields itemCode, ItemQtyonHand and 
-#ItemReorderLvl and merge the two frames.
-
 # Create the initial data frame
 ItemCode <- c(1001, 1002, 1003, 1004, 1005)
 itemCategory <- c("Electronics", "Desktop Supplies", "Office Supplies", "USB", "CD Drive")

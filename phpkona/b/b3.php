@@ -22,7 +22,7 @@
 
             public function SetDistance($f, $i) {
                 $this->feet = $f;
-                $this->inch = $f;
+                $this->inch = $i;
             }
 
             public function AddDistance($d) {
